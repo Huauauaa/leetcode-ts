@@ -1,8 +1,9 @@
-import './style.css'
+import Parent from "./Parent";
+import Son from "./Son";
 
-const app = document.querySelector<HTMLDivElement>('#app')!
+const p = new Parent();
 
-app.innerHTML = `
-  <h1>Hello Vite!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-`
+console.log(p);
+
+const s = new Son();
+console.log(s, s._id);
