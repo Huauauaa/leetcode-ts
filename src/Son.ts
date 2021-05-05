@@ -1,7 +1,7 @@
 import Parent from "./Parent";
 
 export default class Son extends Parent {
-  get _id() {
+  get myId() {
     return this.id;
   }
 }
