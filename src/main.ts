@@ -1,5 +1,14 @@
-import { add } from "./syntax/overload";
+import { repeat, getLength } from "./syntax/generic";
 
-console.log(add("Harvey", "Hua"));
+let result = repeat(12, 3);
 
-console.log(add(1, 2));
+console.log(result);
+
+console.log(repeat("aa", 3));
+
+console.log(getLength("foo"));
+console.log(
+  getLength({
+    length: 666,
+  })
+);
