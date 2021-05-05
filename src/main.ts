@@ -1,9 +1,5 @@
-import Parent from "./Parent";
-import Son from "./Son";
+import { add } from "./syntax/overload";
 
-const p = new Parent();
+console.log(add("Harvey", "Hua"));
 
-console.log(p);
-
-const s = new Son();
-console.log(s, s.myId);
+console.log(add(1, 2));
