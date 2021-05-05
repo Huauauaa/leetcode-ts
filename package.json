@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
+    "dev:ts": "tsc src/main.ts --outDir dist-ts -t es5 -w",
     "build": "tsc && vite build",
+    "build:ts": "tsc src/main.ts --outDir dist-ts -t es5",
     "serve": "vite preview"
   },
   "devDependencies": {
