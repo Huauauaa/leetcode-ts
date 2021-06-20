@@ -1,14 +1,16 @@
 import { Harvey } from './Harvey';
 
 export class Martin extends Harvey {
-  public introduce(): void;
-  public introduce(name: string): void;
+  public introduce(): string;
+  public introduce(name: string): string;
 
-  introduce(name?: string): void {
+  introduce(name?: string): string {
     if (name === undefined) {
-      super.introduce();
+      return super.introduce();
     } else {
       console.log(`I am ${name} Hua`);
+      const msg = `I am ${name} Hua`;
+      return msg;
     }
   }
 }

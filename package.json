@@ -6,9 +6,14 @@
     "dev:ts": "tsc src/main.ts --outDir dist-ts -t es5 -w",
     "build": "tsc && vite build",
     "build:ts": "tsc src/main.ts --outDir dist-ts -t es5",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "test": "jest",
+    "test:dev": "jest --watch"
   },
   "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "jest": "^27.0.4",
+    "ts-jest": "^27.0.3",
     "typescript": "^4.2.3",
     "vite": "^2.2.3"
   }
