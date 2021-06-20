@@ -1,14 +1,8 @@
-import { repeat, getLength } from "./syntax/generic";
+import { Martin } from './syntax/Martin';
 
-let result = repeat(12, 3);
+const m: Martin = new Martin();
 
-console.log(result);
+// console.log(m.lastName);
 
-console.log(repeat("aa", 3));
-
-console.log(getLength("foo"));
-console.log(
-  getLength({
-    length: 666,
-  })
-);
+m.introduce();
+m.introduce('Margin');
