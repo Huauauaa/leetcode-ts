@@ -12,7 +12,10 @@
     "noEmit": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noImplicitReturns": true
+    "noImplicitReturns": true,
+    // 类字段是否需要在构造函数里初始化
+    "strictPropertyInitialization": false,
+    "noImplicitAny": false
   },
   "include": ["./src"]
 }
